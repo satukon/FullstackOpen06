@@ -11,9 +11,11 @@ const AnecdoteForm = () => {
     event.target.content.value = ''
     dispatch(addAnecdote(content))
   }
-
+  const style = {
+    marginBottom: 40
+  }
   return (
-    <form onSubmit={add}>
+    <form style={style} onSubmit={add}>
     <input name="content"/>
     <button type="submit">create</button>
   </form>
